@@ -3,6 +3,11 @@ import { Card } from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
+import { Header } from "@repo/ui/header";
+import { test } from "@repo/github-service";
+
+console.log('test(1, 2):', test(1, 2));
+console.log('aasdad');
 
 function Gradient({
   conic,
@@ -54,6 +59,7 @@ const LINKS = [
 export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
+      <Header title="Github Repo Search" />
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
